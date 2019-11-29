@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "ca31135e-c54a-4cb0-8ed7-abe9e96b28b2",
+		"name": "Memes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8081/auth/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"giovana.maria\",\n    \"password\": \"1132\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/meme",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTE4NTMzZWYzYWI4MDAxNzg0NWMzMyIsImlhdCI6MTU3NTA2NDQzOCwiZXhwIjoxNTc1MTUwODM4fQ.hUvfLAwjJueJhNyk1JHpDyHGonvzZPtAIcw7Omu8s20",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"titulo\" : \"Doge\",\n\t\"descricao\" : \"sadoad\",\n\t\"ano\" : 2019\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/meme/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"meme",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/meme/5de1903a895102181e76a1c8",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTE4NTMzZWYzYWI4MDAxNzg0NWMzMyIsImlhdCI6MTU3NTA2MzU5OSwiZXhwIjoxNTc1MTQ5OTk5fQ.yOZ3DUiOo8L-w-GumwEHvNSB-ElyLrzWALOyG9lfLuQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"titulo\" : \"Doge\",\n\t\"descricao\" : \"sadoad\",\n\t\"ano\" : 2019\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/meme/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"meme",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/meme/",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTE4NTMzZWYzYWI4MDAxNzg0NWMzMyIsImlhdCI6MTU3NTA2MzU5OSwiZXhwIjoxNTc1MTQ5OTk5fQ.yOZ3DUiOo8L-w-GumwEHvNSB-ElyLrzWALOyG9lfLuQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"titulo\" : \"Doge\",\n\t\"descricao\" : \"sadoad\",\n\t\"ano\" : 2019\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/meme/5de1903a895102181e76a1c8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"meme",
+						"5de1903a895102181e76a1c8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/meme/5de1903a895102181e76a1c8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTE4NTMzZWYzYWI4MDAxNzg0NWMzMyIsImlhdCI6MTU3NTA2MzU5OSwiZXhwIjoxNTc1MTQ5OTk5fQ.yOZ3DUiOo8L-w-GumwEHvNSB-ElyLrzWALOyG9lfLuQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/meme/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"meme",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/meme/",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTE4NTMzZWYzYWI4MDAxNzg0NWMzMyIsImlhdCI6MTU3NTA2MzU5OSwiZXhwIjoxNTc1MTQ5OTk5fQ.yOZ3DUiOo8L-w-GumwEHvNSB-ElyLrzWALOyG9lfLuQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"5de1903a895102181e76a1c8\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/meme/5de1903a895102181e76a1c8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"meme",
+						"5de1903a895102181e76a1c8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/meme/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTE4NTMzZWYzYWI4MDAxNzg0NWMzMyIsImlhdCI6MTU3NTA2MzU5OSwiZXhwIjoxNTc1MTQ5OTk5fQ.yOZ3DUiOo8L-w-GumwEHvNSB-ElyLrzWALOyG9lfLuQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/meme/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"meme",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
